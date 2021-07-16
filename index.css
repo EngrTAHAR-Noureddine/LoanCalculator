@@ -1,0 +1,155 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 40%;
+    height: 50%;
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    flex-direction: column;
+   border-radius: 20px;
+   border: 1px solid white;
+
+    background-color: #fdfdfd;
+}
+.title{
+    display: block;
+}
+.form-calcul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    height: 70%;
+}
+.loan-amount ,.annual-interest ,.repayment,.btn{
+    height: 20%;
+    width: 60%;
+    margin-top: 1%;
+    background-color: transparent;
+    display: inline-flex;
+}
+.amount-icon,.interest-icon{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(128, 128, 128, 0.589);
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.input-amount,.input-interest{
+    width: 80%;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 1px solid black;
+}
+
+.input-repayment{
+    width: 100%;
+    border-radius: 25px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.btn{
+    width:40%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+}
+
+.result{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.card-result{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.monthly-payment ,.total-payment ,.total-interest{
+    height: 20%;
+    width: 80%;
+    margin-top: 1%;
+    background-color: transparent;
+    display: inline-flex;
+}
+.title-monthly,.title-payment,.title-interest{
+    height: 100%;
+    width: 30%;
+    background-color: grey;
+    color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-monthly,.result-payment,.result-interest{
+    width: 80%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+    background-color: transparent;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    color: #444444;
+}
+
+.cancel-btn{
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+}
+.cancel-btn:hover{
+    cursor: pointer;
+}
+.result{
+    /* display: flex; */
+    display: none;
+}

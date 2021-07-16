@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Loan Calculator</h1>
+        </div>
+        <form class="form-calcul" id="loan-form">
+            <div class="loan-amount">
+                <div class="amount-icon">$</div>
+                <input id="amount" type="number" placeholder="Loan-Amount" value="" class="input-amount">
+            </div>
+            <div class="annual-interest">
+                <div class="interest-icon">%</div>
+                <input id="interest" type="number" placeholder="Annual Interest" value="" class="input-interest">
+            </div>
+            <div class="repayment">
+                <input id="years" type="number" placeholder="Years to Repay" value="" class="input-repayment">
+            </div>
+            <input type="submit" value="Calculate" class="btn">
+        </form>
+        
+    </div>
+    <div class="result">
+        
+            <div class="card-result">
+                <h2>Results</h2>
+                <div class="monthly-payment">
+                    <div class="title-monthly">Monthly Payment</div>
+                    <input disabled class="result-monthly" id="monthly-payment" type="text" value="">
+                </div>
+                <div class="total-payment">
+                        <div class="title-payment">Total Payment</div>
+                        <input disabled  class="result-payment" id="total-payment" type="text" value="">
+                </div>
+                <div class="total-interest">
+                    <div class="title-interest">Total Interest</div>
+                    <input disabled  class="result-interest" id="total-interest" type="text" value="">
+                </div>
+                <h3 class="cancel-btn">Cancel</h3>
+            </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
